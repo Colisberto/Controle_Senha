@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="323.0" prefWidth="587.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ConsultaEquipamentoControle">
+   <children>
+      <ComboBox id="comboTipo" fx:id="ComboTipo" layoutX="30.0" layoutY="24.0" onAction="#selecionarTipo" prefWidth="150.0" promptText="Selecione o Tipo" />
+      <TableView fx:id="tableDadosEquipamento" layoutX="6.0" layoutY="92.0" prefHeight="200.0" prefWidth="576.0">
+        <columns>
+          <TableColumn id="colunaNome" fx:id="clnNomeEquipamento" prefWidth="107.0" text="Nome" />
+          <TableColumn id="colunaSenha" fx:id="clnSenhaAcesso" prefWidth="92.0" text="Senha" />
+            <TableColumn id="colunaIP" fx:id="clnEnderecoIp" prefWidth="120.0" text="End. Ip" />
+            <TableColumn id="colunaMac1" fx:id="clnMac_1" prefWidth="119.0" text="Mac -1" />
+            <TableColumn id="colunaMac2" fx:id="clnMac_2" prefWidth="137.0" text="Mac - 2" />
+        </columns>
+      </TableView>
+      <Button id="btnListar" fx:id="btnListar" layoutX="135.0" layoutY="58.0" mnemonicParsing="false" onAction="#listarEquipamentos" text="Listar" />
+   </children>
+</AnchorPane>

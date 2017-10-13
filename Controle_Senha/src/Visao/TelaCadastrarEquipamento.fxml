@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="276.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EquipamentoControle">
+   <children>
+      <ComboBox fx:id="comboTipoEquipamento" layoutX="31.0" layoutY="47.0" prefHeight="25.0" prefWidth="214.0" promptText="Selecione Tipo de Equipamento" />
+      <Label layoutX="143.0" layoutY="14.0" text="Cadastro de Equipamento">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label id="lblDataCompra" fx:id="lblDataCompra" layoutX="387.0" layoutY="85.0" text="Data Aquisição :" />
+      <Label id="lblMac_1" fx:id="lblMac1" layoutX="323.0" layoutY="114.0" text="End. Mac -1 :" />
+      <Label id="lblCnpjFornecedor" fx:id="lblCnpjFornecedor" layoutX="277.0" layoutY="54.0" text="CNPJ Foenecedor :" />
+      <Label id="lblFornecedor" fx:id="lblFornecedor" layoutX="31.0" layoutY="85.0" text="Fornecedor :" />
+      <TextField id="txtMac_1" fx:id="txtMac1" layoutX="395.0" layoutY="110.0" prefHeight="25.0" prefWidth="183.0" promptText="txtMac_1" />
+      <TextField id="txtFornecedor" fx:id="txtFornecedor" layoutX="103.0" layoutY="81.0" prefHeight="25.0" prefWidth="278.0" promptText="txtFornecedor" />
+      <TextField id="txtFornecedor" fx:id="txtCnpjFornecedor" layoutX="379.0" layoutY="47.0" prefHeight="25.0" prefWidth="200.0" promptText="txtCnpjFornecedor" />
+      <Button fx:id="btnCadastrarEquipamento" layoutX="448.0" layoutY="215.0" mnemonicParsing="false" onAction="#cadastrarEquipamento" text="Cadastrar" />
+      <Button layoutX="522.0" layoutY="215.0" mnemonicParsing="false" text="Alterar" />
+      <TextField id="txtFabricante" fx:id="txtFabricante" layoutX="96.0" layoutY="203.0" prefHeight="25.0" prefWidth="214.0" promptText="txtFabricante" />
+      <Label id="lblFabricante" fx:id="lblFabricante" layoutX="32.0" layoutY="207.0" text="Fabricante :" />
+      <Label id="lblModelo" fx:id="lblModelo" layoutX="348.0" layoutY="177.0" text="Modelo:" />
+      <TextField id="txtModelo" fx:id="txtModelo" layoutX="395.0" layoutY="173.0" prefHeight="25.0" prefWidth="183.0" promptText="txtFabricante" />
+      <DatePicker fx:id="dtDataCompra" layoutX="479.0" layoutY="81.0" prefHeight="25.0" prefWidth="99.0" />
+      <TextField id="txtMac_2" fx:id="txtMac2" layoutX="396.0" layoutY="142.0" prefHeight="25.0" prefWidth="183.0" promptText="txtMac_2" />
+      <Label id="lblMac_2" fx:id="lblMac2" layoutX="324.0" layoutY="146.0" text="End. Mac -2 :" />
+      <TextField id="txtSenha" fx:id="txtSenha" layoutX="116.0" layoutY="172.0" prefHeight="25.0" prefWidth="194.0" promptText="txtSenha" />
+      <Label id="lblSenha" fx:id="lblSenha" layoutX="32.0" layoutY="176.0" text="Senha Acesso :" />
+      <TextField id="txtNome" fx:id="txtNome" layoutX="79.0" layoutY="110.0" prefHeight="25.0" prefWidth="230.0" promptText="txtNome" />
+      <Label id="lblNome" layoutX="31.0" layoutY="114.0" text="Nome :" />
+      <Label id="lblIp" layoutX="31.0" layoutY="146.0" text="IP :" />
+      <TextField id="txtIP" fx:id="txtIp" layoutX="79.0" layoutY="142.0" prefHeight="25.0" prefWidth="230.0" promptText="txtIP" />
+      
+   </children>
+</AnchorPane>

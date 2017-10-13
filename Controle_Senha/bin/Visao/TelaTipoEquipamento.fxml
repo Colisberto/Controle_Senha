@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="TelaCadTipoEquipamento" prefHeight="193.0" prefWidth="340.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.TipoEquipamentoControle">
+   <children>
+      <Button id="btbCadastrar" fx:id="btnCadastrar" layoutX="187.0" layoutY="147.0" mnemonicParsing="false" onAction="#cadastrarTipo" text="Cadastrar" />
+      <Button id="btnCancelar" fx:id="btnCancelar" layoutX="261.0" layoutY="147.0" mnemonicParsing="false" text="Cancelar" />
+      <Label id="lblTipo" fx:id="lblTipoEquipamento" layoutX="22.0" layoutY="68.0" text="Tipo :" />
+      <Label layoutX="33.0" layoutY="14.0" text="Tela de cadastro Tipo Equipamento">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField id="txtTipo" fx:id="txtTipoEquipamento" layoutX="67.0" layoutY="64.0" prefHeight="25.0" prefWidth="262.0" />
+   </children>
+</AnchorPane>

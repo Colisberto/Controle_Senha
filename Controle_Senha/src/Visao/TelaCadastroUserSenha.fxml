@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="TeleCadastrarUserSenha" prefHeight="213.0" prefWidth="269.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UserSenhaControle">
+   <children>
+      <Button id="btnCadastarr" fx:id="btnCadastrar" layoutX="106.0" layoutY="147.0" mnemonicParsing="false" onAction="#cadastrarUsuarioSenha" text="Cadastrar" />
+      <ComboBox id="comboEquipamento" fx:id="comboEquipamento" layoutX="33.0" layoutY="51.0" prefHeight="25.0" prefWidth="197.0" promptText="Selecione o Equipamento" />
+      <TextField id="txtUsuario" fx:id="txtUsuario" layoutX="82.0" layoutY="84.0" />
+      <Label id="lblUsuario" fx:id="lblUsuario" layoutX="32.0" layoutY="88.0" text="Usuário :" />
+      <Label id="lblSenha" fx:id="lblSenha" layoutX="32.0" layoutY="117.0" text="Senha :" />
+      <TextField id="txtSenha" fx:id="txtSenha" layoutX="75.0" layoutY="113.0" prefHeight="25.0" prefWidth="157.0" />
+      <Button id="btnAlterar" fx:id="btnAlterar" layoutX="180.0" layoutY="147.0" mnemonicParsing="false" text="Alterar" />
+      <ComboBox id="comboTipo" fx:id="comboTipo" layoutX="33.0" layoutY="22.0" prefHeight="25.0" prefWidth="140.0" promptText="Selecione o Tipo" />
+   </children>
+</AnchorPane>

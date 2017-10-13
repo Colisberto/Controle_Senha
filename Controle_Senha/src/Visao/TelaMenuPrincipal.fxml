@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuControle">
+   <center>
+      <Pane fx:id="paneInicial" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lblLogin" layoutX="175.0" layoutY="118.0" text="Login:" />
+            <Label fx:id="lblSenha" layoutX="175.0" layoutY="155.0" text="Senha:" />
+            <TextField id="lblLogin" fx:id="txtLogin" layoutX="219.0" layoutY="114.0" promptText="txtLogin" />
+            <TextField id="lblSenha" fx:id="txtSenha" layoutX="219.0" layoutY="151.0" promptText="txtSenha" />
+            <Button id="btnEntrar" fx:id="btnEntrar" layoutX="220.0" layoutY="188.0" mnemonicParsing="false" text="Entrar" />
+            <Button id="btnSair" fx:id="btnSair" layoutX="308.0" layoutY="188.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="58.0" text="Sair" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu id="cadastros" fx:id="MenuCadastros" mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem id="cadastrarColaboradores" fx:id="menuItemCadColaborador" mnemonicParsing="false" onAction="#abrirCadastrarColaborador" text="Cadastrar Colaboradores" />
+                  <MenuItem id="cadastrarServidores" fx:id="menuItemCadEquipamento" mnemonicParsing="false" onAction="#abrirCadastrarEquipamento" text="Cadastrar Equipamento" />
+                  <MenuItem fx:id="menuItemCadTipoEquipamento" mnemonicParsing="false" onAction="#abrirTelaCadTipoEquipamento" text="Cadastrar Tipo Equipamento" />
+            </items>
+          </Menu>
+          <Menu id="consultas" fx:id="menuConsultas" mnemonicParsing="false" text="Consultas">
+            <items>
+              <MenuItem id="consultaEquipamento" fx:id="menuItemConsEquipamento" mnemonicParsing="false" onAction="#abrirTelaConsultaSenha" text="Consulta Equipamento" />
+            </items>
+          </Menu>
+          <Menu id="relatorios" fx:id="meuRelatorios" mnemonicParsing="false" text="Relatorios">
+            <items>
+              <MenuItem id="relatoriosEquipamentos" fx:id="menuItemRelEquipamento" mnemonicParsing="false" text="Relatorios de Equipamentos" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>
